@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  idd: MyString
+  namee: MyString
+  nameee: MyString
+  projectt: 1
+  finall: 1
+  labb: 1
+  classs: 1
+  totall: 1
+
+two:
+  idd: MyString
+  namee: MyString
+  nameee: MyString
+  projectt: 1
+  finall: 1
+  labb: 1
+  classs: 1
+  totall: 1

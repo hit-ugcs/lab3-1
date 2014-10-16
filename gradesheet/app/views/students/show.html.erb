@@ -1,0 +1,45 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>StudentId:</b>
+  <%= @student.idd %>
+</p>
+
+<p>
+  <b>Student Name (Chinese):</b>
+  <%= @student.namee %>
+</p>
+
+<p>
+  <b>Nick Name (English):</b>
+  <%= @student.nameee %>
+</p>
+
+<p>
+  <b>Project (40%):</b>
+  <%= @student.projectt %>
+</p>
+
+<p>
+  <b>Final (40%):</b>
+  <%= @student.finall %>
+</p>
+
+<p>
+  <b>Lab (10%):</b>
+  <%= @student.labb %>
+</p>
+
+<p>
+  <b>Class (10%):</b>
+  <%= @student.classs %>
+</p>
+
+<p>
+  <b>Total:</b>
+  <%= @student.totall = @student.projectt + @student.finall + @student.labb + @student.classs %>
+</p>
+
+
+<%= link_to 'Edit', edit_student_path(@student) %> |
+<%= link_to 'Back', list_path(1) %>
