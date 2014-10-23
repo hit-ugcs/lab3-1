@@ -1,0 +1,59 @@
+<head>
+    <style>
+        table, th, td {
+            text-align: left;
+        }
+    </style>
+</head>
+
+<h1>Grading Worksheet</h1>
+
+<hr style = "color : blue">
+
+<table style = "width:100%">
+  <tr>
+    <th>StudentId</th>
+    <th>Student Name<br>(Chinese)</th>
+    <th>Nick Name<br>(English)</th>
+    <th>Project (40%)</th>
+    <th>Final (40%)</th>
+    <th>Lab (10%)</th>
+    <th>Class (10%)</th>
+    <th>Total</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+
+
+<% @students.each do |student| %>
+  <tr>
+    <td><%= student.idd %></td>
+    <td><%= student.namee %></td>
+    <td><%= student.nameee %></td>
+    <td><%= student.projectt %></td>
+    <td><%= student.finall %></td>
+    <td><%= student.labb %></td>
+    <td><%= student.classs %></td>
+    <td><%= student.totall = student.projectt + student.finall + student.labb + student.classs %></td>
+    <td><%= link_to 'Edit', edit_student_path(student) %></td>
+    <td><%= link_to 'Delete', student, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Student', new_student_path %>
+
+<br><br>
+
+<a href="/home/index"><button type="button" style = 
+"float:right; background-color: #4466ff; color: #ffffff; padding: 14px 30px; font-size:20px"
+>Exit</button></a> 
+
+<button type="button" style = 
+"float:right; background-color: #4466ff; color: #ffffff; padding: 14px 30px; font-size:20px; margin-right:10px"
+>Print</button>
